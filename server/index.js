@@ -5,6 +5,8 @@ const authRouter = require("./routes/auth");
 const studentRouter = require("./routes/student");
 require("dotenv").config();
 
+const PORT = 3005;
+
 const app = express();
 
 app.use(express.json());
@@ -18,8 +20,12 @@ mongoose.connect("mongodb+srv://Dawood:Dqjan292002@schoolmanagementsystem.scyesb
 app.use("/admin", authRouter);
 app.use('/student', studentRouter);
 
+app.use(express.static(path.join(__dirname,'../client/dist')));
 
+app.get('*',(req,res)=>{
+  res.sendFile(path.join(__dirname,'../client/dist/index.html'));
+})
 
-app.listen(process.env.PORT || 3005 ,()=>{
-    console.log("Server is running on Port 3005")
+app.listen(process.env.PORT || PORT ,()=>{
+    console.log(`Server is running on Port ${PORT}`)
 })
