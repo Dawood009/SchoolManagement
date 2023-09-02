@@ -8,7 +8,7 @@
     "start": "node index.js",
     "devstart": "nodemon index.js",
     "client": "npm start --prefix client",
-    "build": "concurrently \"npm start\" npm run client"
+    "dist": "concurrently \"npm start\" npm run client"
     
   },
   "author": "",
