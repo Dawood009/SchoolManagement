@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const authRouter = require("./routes/auth");
 const studentRouter = require("./routes/student");
+require("dotenv").config();
 
 const app = express();
 
@@ -19,6 +20,6 @@ app.use('/student', studentRouter);
 
 
 
-app.listen(3005,()=>{
+app.listen(process.env.PORT || 3005 ,()=>{
     console.log("Server is running on Port 3005")
 })
