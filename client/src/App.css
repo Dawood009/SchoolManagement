@@ -1,0 +1,177 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: white;
+
+}
+.navbar h1{
+  color: white;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(102, 148, 233);
+}
+
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+.login-btn{
+  color: white;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(5, 148, 5);
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.addStudent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 950px;
+  background-color: rgb(102, 148, 233);}
+
+.student-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 500px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #333333;
+  background-color: white;
+}
+
+.student-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.add-btn{
+  color: white;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(5, 148, 5);
+  border: 0;
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.students,.table-container,.table-container table{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+table thead , tr{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+ tbody ,td,th{
+  width: 100%;
+ }
+
+ td{
+  display: flex;
+  justify-content: center;
+ }
+
+ tr{
+  margin-top: 20px;
+ }
+
+ table{
+  border: 1px solid black;
+  
+ }
+tbody{
+  margin-bottom: 20px;
+}
+
+tbody tr{
+  border-top: 1px solid grey;
+  padding-top: 10px;
+}
+
+.logout-btn{
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.isLogin{
+  background-color: red;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addStudent h1{ 
+  margin-top: 50px;
+  color: red;
+}
+
+.addStudent h2{
+  margin-top: 50px;
+  color: rgb(7, 165, 7);
+  font-size: 40px;
+}
